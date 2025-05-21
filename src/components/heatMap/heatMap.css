@@ -1,0 +1,118 @@
+.container-heatmap {
+    width: 1200px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 0px 10px;
+}
+
+.input-heatmap-fields {
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+}
+
+.input-fields:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.input-heatmap-one,
+.input-heatmap-two {
+    width: 1200px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 2px;
+}
+
+
+.heatmap-headers {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.heatmap-subheaders {
+    font-size: 18px;
+    padding: 5px;
+}
+
+.heatmap-container {
+    width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    padding: 10px 0px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.card p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.select-container {
+    margin: 10px;
+    border: none;
+}
+
+.select-css {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+}
+
+.select-css option {
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+}
+
+
+.heatmap-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input{
+    height :'5px !important'
+}

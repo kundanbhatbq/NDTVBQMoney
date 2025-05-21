@@ -1,0 +1,31 @@
+header {
+  background-color: #fff;
+}
+
+.app-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+  background-color: #fff;
+  border-radius: 0px 0px 20px 20px;
+  border-bottom: 5px solid #0fbbff;
+  cursor: pointer;
+
+  img {
+    object-fit: contain;
+    width: 130px;
+  }
+
+  .announcements-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  &:hover {
+    border-bottom-color: red;
+  }
+}
+
+.table {
+    padding: 0px 10px;
+}

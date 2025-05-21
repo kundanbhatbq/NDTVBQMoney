@@ -1,0 +1,63 @@
+.inner-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid rgb(240, 236, 236);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.text .first-span {
+    font-size: 22px;
+    margin: 0px 10px;
+}
+
+.text .green-span {
+    color: green;
+    font-size: 18px
+}
+
+.text .red-span {
+    color: red;
+    font-size: 18px
+}
+
+.text .blue-span {
+    color: rgb(32, 32, 228);
+    font-size: 18px
+}
+
+.text span {
+    margin-bottom: 5px;
+}
+.source{
+    display: flex;
+    justify-content: flex-end;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+.text {
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .first-span {
+    display: block;
+    font-weight: bold;
+  }
+  
+  span {
+    display: block;
+  }
+  

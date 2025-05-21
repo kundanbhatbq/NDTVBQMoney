@@ -1,0 +1,440 @@
+/* Main container */
+.fund-flow-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 350px;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Left panel styles */
+.left-panel {
+  flex: 1;
+  min-width: 300px;
+  background-color: #01BBFF;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; /* Center align items */
+  text-align: center; /* Center text */
+}
+
+.title-container {
+  width: 100%;
+  margin-top: 4rem;
+  text-align: center; /* Center the title text */
+}
+
+.fund-text {
+  font-size: 6rem;
+  font-weight: 100;
+  line-height: 0.7;
+  letter-spacing: 1px;
+  transform: scaleX(1.1);
+}
+
+.flow-text {
+  font-size: 6rem;
+  font-weight: 1000;
+  margin-top: 10px;
+}
+
+.picture-text {
+  font-size: 4rem;
+  font-weight: 550;
+  margin-top: 25px;
+  transform: scaleY(0.7);
+
+}
+
+
+
+
+.date-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Ensure vertical centering */
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.date-box-solid {
+  background-color: #0e3d64; /* Match your existing dark blue box */
+  color: white;
+  border-radius: 4px;
+  font-size: 25px; /* Adjusted for better visibility */
+  font-weight: 800; /* Adjusted for better visibility */
+  min-width: 180px; /* Adjusted for better visibility */
+  height: 70px; /* Ensure consistent height */
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: adds depth */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Ensure vertical centering */
+
+}
+
+
+
+
+.source-text {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  align-self: flex-start;
+}
+
+/* Right panel styles */
+.right-panel {
+  flex: 2;
+  min-width: 400px;
+  background-image: url("../../../public/images/FundFlowBG.png");
+  background-size: cover;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 80px; /* Add padding at bottom to prevent overlap with logo */
+}
+
+.right-panel::before {
+  content: "(Rs Crore)";
+  position: absolute;
+  font-weight: 900;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.cash-market-title {
+  font-size: 2.5rem;
+  color: #ff506e;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.market-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.value-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 65%;
+}
+.header1 {
+  width: 120px;
+  text-align: center;
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header2 {
+  width: 120px;
+  text-align: center;
+}
+
+.value {
+  width: 120px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 600;
+}
+
+.value2  {
+  width: 120px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 30px;
+  font-weight: 600;
+}
+.FO{
+  font-size: 2rem;
+  color: #ff506e;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+.separator {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.logo-container {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+  z-index: 5; /* Ensure logo stays on top */
+}
+
+.logo {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+}
+.main-container2 {
+  background-image: url("../../../public/images/Fiidiiflowbg.jpg");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  aspect-ratio: 1200/670;
+  overflow: hidden;
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  position: absolute;
+  top: 250px; /* Position below the header area in background image */
+  left: 0;
+  right: 0;
+  bottom: 60px; /* Increased from 40px to provide more space for footer */
+}
+
+.time-box {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 85%;
+
+}
+
+.time-header {
+  background-color: #3b5998;
+  color: white;
+  padding-bottom: 10px;
+
+  text-align: center;
+  font-weight: bold;
+  font-size: clamp(20px, 2vw, 16px);
+}
+
+.flow-data {
+  padding: 15px;
+  color: black;
+}
+
+.data-item {
+ 
+  display: flex;
+  justify-content: space-between;
+  font-size: clamp(12px, 2vw, 14px);
+
+}
+
+.label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.value {
+  text-align: right;
+}
+.value3{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.source {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.logo {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.logo .blue {
+  color: #00a0dc;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    aspect-ratio: 768/850;
+  }
+  
+  .data-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    top: 180px;
+  }
+}
+
+.market-data-container {
+  width: 100%;
+  max-width: 80%;
+  margin: 110px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+.header-row {
+  display: flex;
+  width: 100%;
+  background:#3b5998;
+  color: white;
+  font-weight: bold;
+  height: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header-cell {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  padding: 10px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.header-cell:last-child {
+  border-right: none;
+}
+
+.data-row {
+  display: flex;
+  width: 100%;
+  background-color: white;
+}
+
+.data-cell {
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+  border-right: 1px solid #eee;
+  font-size: 27px;
+}
+
+.data-cell:last-child {
+  border-right: none;
+}
+
+.positive {
+  color: #0a9e01;
+}
+
+.negative {
+  color: #e91e63;
+}
+
+/* Currency symbol styling */
+.currency {
+  font-weight: normal;
+  margin-left: 2px;
+}
+
+
+.Fii-DII-FLOW-DATE{
+  
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    aspect-ratio: 480/1300;
+  }
+  
+  .data-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    top: 160px;
+    padding: 20px;
+    grid-gap: 15px;
+  }
+  
+  .footer {
+    height: 40px;
+  }
+  
+  .logo span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    aspect-ratio: 480/1300;
+  }
+  
+  .data-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    top: 160px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .market-row {
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  
+  .value-container {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+  }
+  
+  .fund-text, .flow-text {
+    font-size: 3rem;
+  }
+  
+  .picture-text {
+    font-size: 2rem;
+  }
+  
+  .date-box {
+    font-size: 1.4rem;
+    padding: 0.4rem 1.5rem;
+  }
+  
+  .header1, .header2, .value {
+    width: 33%;
+  }
+}
+

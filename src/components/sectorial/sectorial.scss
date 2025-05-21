@@ -1,0 +1,47 @@
+$primary-color: #007bff;
+$box-shadow-color: rgba(0, 123, 255, 0.5);
+
+.input-fields {
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+
+    &:focus {
+        border-color: $primary-color;
+        box-shadow: 0 0 8px $box-shadow-color;
+    }
+}
+
+.input-container-one,
+.input-container-two {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2px;
+}
+
+.headers {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.subheaders {
+    font-size: 15px;
+}
+
+.NDTV-logo {
+    width: 120px;
+    height: auto;
+  }
+
+.source {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 22px;
+  }

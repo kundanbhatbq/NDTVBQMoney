@@ -1,0 +1,277 @@
+@import "../../mixins.scss";
+@import "../../responsive.scss";
+
+.header-container {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.updated-text {
+  background-color: yellow;
+}
+
+.marketNames {
+  line-height: 1.25rem;
+  display: flex;
+  color: rgb(60, 64, 67);
+  padding: 2px 8px;
+  font-size: 0.875rem;
+  overflow-x: auto;
+  align-items: center;
+
+  .badgeItm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 8px;
+    cursor: pointer;
+  }
+}
+
+.marketData {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.4em;
+  cursor: pointer;
+  width: 100%;
+  overflow-x: auto;
+
+  .cardBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 auto;
+    padding: 0px 8px;
+    font-size: 12px;
+    transition: transform 0.2s;
+    min-width: 190px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .marketDetails,
+    .indicesName,
+    .currentValue,
+    .marketValue,
+    .arrowIcon {
+      text-align: center;
+      font-size: 15px;
+      font-weight: bold;
+      margin: 1px 0px;
+    }
+
+    .percentGreen {
+      color: #007162;
+    }
+
+    .percentBlue {
+      color: #0000FF;
+    }
+
+    .percentRed {
+      color: #ee4209;
+    }
+
+    .valueGreen {
+      color: #007162;
+    }
+
+    .valueBlue {
+      color: #0000FF;
+    }
+
+    .valueRed {
+      color: #ee4209;
+    }
+
+    .marketValue p {
+      font-weight: bold;
+    }
+
+    .icon {
+      border-radius: 8px;
+      padding: 8px;
+      display: block;
+
+      .arrowIcon svg {
+        font-size: 18px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .cardBox {
+      flex-direction: column;
+      min-width: auto;
+      padding: 2px 8px;
+      gap: 0px;
+      width: max-content;
+    }
+
+    .valueGreen,
+    .valueBlue,
+    .valueRed {
+      display: none;
+    }
+  }
+}
+
+.treeview-container {
+  padding: 15px;
+  border-radius: 5px;
+  height: 62vh;
+  overflow-y: auto;
+}
+
+.custom-treeview {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  overflow: hidden;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease,
+    border-radius 0.3s ease;
+  position: relative;
+  border-radius: 8px;
+}
+
+.custom-treeview:hover {
+  background: linear-gradient(to bottom, #f5f5f5, #eaeaea);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+  border-radius: 12px;
+}
+
+.MuiTreeItem-label {
+  padding: 8px 12px;
+  color: #333;
+  // font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease,
+    border-radius 0.3s ease;
+}
+
+.MuiTreeItem-root.Mui-selected,
+.MuiTreeItem-root.Mui-selected:hover {
+  background-color: #007bff !important;
+  color: #fff !important;
+  transition: none;
+  border-radius: 8px;
+}
+
+.Mui-selected {
+  background-color: transparent !important;
+  color: inherit !important;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.MuiTreeItem-iconContainer {
+  margin-right: 8px;
+  color: #555;
+  font-size: 20px;
+  transition: transform 0.2s ease;
+}
+
+.MuiTreeItem-expanded>.MuiTreeItem-iconContainer {
+  transform: rotate(90deg);
+}
+
+.custom-treeview::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-treeview::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 8px;
+}
+
+.custom-treeview::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  transition: left 0.5s ease-in-out;
+  z-index: 1000;
+
+  &.open {
+    left: 0;
+  }
+
+  nav {
+    padding-top: 50px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    min-height: 100vh;
+
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #333;
+      z-index: 1;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        font-weight: bolder;
+        margin: 5px;
+
+        a {
+          display: block;
+          padding: 10px;
+          text-decoration: none;
+          color: #333;
+          transition: background-color 0.3s;
+
+          &:hover {
+            background-color: #f0f0f0;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 250px;
+
+    &.open {
+      left: 0;
+    }
+  }
+}
+
+.sidebar-link {
+  text-decoration: none;
+}
+
+.sidebar-list-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: transform 0.3s, background-color 0.3s;
+  background-color: transparent;
+  cursor: pointer;
+
+}
+
+.sidebar-list-item:hover {
+  color: blue;
+  background-color: #e6f4ea;
+  transform: translateX(5px);
+}

@@ -1,0 +1,56 @@
+$primary-color: #007bff;
+$box-shadow-color: rgba(0, 123, 255, 0.5);
+
+.flex-container {
+    display: flex;
+    background-color: #e0e0e0; 
+    padding: 2px 15px;
+    border-radius: 5px;
+}
+
+.flex-container > div {
+    margin-right: 50px; 
+}
+
+.button {
+    padding: 10px 10px;
+    border: none;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.active {
+    background-color: #5f5d5d;
+    color: #fff
+}
+
+  .NDTV-logo {
+    width: 120px;
+    height: auto;
+  }
+  
+
+.download-btn {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }

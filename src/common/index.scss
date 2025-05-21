@@ -1,0 +1,17 @@
+.delete-icon:hover {
+  color: rgb(233, 84, 79);
+}
+
+.dynamic-cell {
+  white-space: nowrap;
+}
+
+@keyframes blinking {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blinking {
+  animation: blinking 1s infinite;
+}

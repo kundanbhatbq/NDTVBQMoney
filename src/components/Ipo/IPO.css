@@ -1,0 +1,10 @@
+.negative-value {
+    color: red;
+}
+
+.positive-value {
+    color: green;
+}
+.neutral-value {
+    color: grey;
+}

@@ -1,0 +1,315 @@
+.container {
+  position: fixed;
+  top: 0;
+  right: 10px;
+  width: 100%;
+  max-width: 300px;
+  background-color: #fff;
+  z-index: 999;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 20%;
+  }
+}
+
+.h-container {
+  grid-gap: 10px;
+  align-items: center;
+  border-bottom: 1px solid #dadee1;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 0.5fr 2fr 9fr;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.h-logo {
+  text-align: center;
+  width: 50px;
+  background: rgb(240, 248, 255);
+  border-radius: 5px;
+}
+
+.h-logo-text {
+  font-size: 25px;
+  font-weight: 700;
+  margin: auto;
+}
+
+.h-1-item {
+  position: relative;
+}
+
+.h-1-input {
+  border: 1px solid rgba(218, 222, 225, 0.44);
+  border-radius: 8px;
+  font-weight: 700;
+  line-height: 26px;
+  padding: 5px 28px;
+}
+
+.h-2 {
+  grid-gap: 5px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(9, 1fr);
+  overflow-x: auto;
+  text-align: center;
+}
+
+.h-2-text {
+  background: aliceblue;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.h-2-item .h-2-text {
+  font-size: 14px;
+  font-weight: 550;
+}
+
+.h-2-item > p {
+  line-height: 16px;
+}
+
+.h-2-item .h-2-text1 {
+  font-size: 12px;
+  font-weight: 450;
+  white-space: nowrap;
+}
+
+//graph
+
+.graph-container {
+  display: grid;
+  padding-top: 10px;
+  grid-template-columns: 1fr 1fr;
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.graph-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10px;
+}
+
+.graph-item2 {
+  border-right: 1px solid #dadee1;
+
+  @media (max-width: 600px) {
+    border-right: none;
+    border-bottom: 1px solid #dadee1;
+  }
+}
+
+.graph-text {
+  font-family: var(--font1);
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.graph-month-container {
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+  margin-bottom: 10px;
+
+
+}
+
+.graph-month {
+  grid-gap: 7px;
+  background: aliceblue;
+  border-radius: 4px;
+  display: grid;
+  gap: 7px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5px;
+}
+
+.graph-min {
+  grid-gap: 7px;
+  background: aliceblue;
+  border-radius: 4px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 5px;
+}
+
+.graph-type {
+  grid-gap: 7px;
+  background: aliceblue;
+  border-radius: 4px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5px;
+}
+
+.graph-type3{
+    grid-gap: 7px;
+  background: aliceblue;
+  border-radius: 4px;
+  display: flex;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 5px;
+}
+
+.graph-type2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 10px; /* Spacing between grid items */
+  padding: 5px; /* Padding inside the container */
+  background: aliceblue; /* Background color */
+  border-radius: 4px; /* Rounded corners */
+  overflow-x: auto; /* Add horizontal scroll if content overflows */
+}
+
+.graph-type2 > * {
+  word-wrap: break-word; /* Allows long words to wrap */
+  overflow-wrap: break-word; /* Older browser support */
+  hyphens: auto; /* Optional: Add hyphens for better wrapping */
+}
+
+
+.graph-month-btn {
+  border: none;
+  border-radius: 4px;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 10px;
+  cursor: pointer !important;
+  background-color: #fff;
+}
+
+.graph-month-active {
+  box-shadow: 0 3px 17px rgba(3, 3, 3, 0.114);
+  background: #595858;
+  color: #fff;
+}
+
+.graph-month-text {
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.chart-header {
+  padding: 0px 5px 0px 15px;
+}
+
+.graph-month-options {
+  border: 1px solid rgba(218, 222, 225, 0.44);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.line-graph {
+  padding: 25px 0;
+}
+
+//table tabs
+
+.table-head {
+  padding: 0px 10px 20px 10px;
+}
+
+.table-tab1 {
+  font-size: 18px;
+  text-align: center;
+  background-color: #595858;
+  color: #fff;
+  padding: 5px;
+  margin-bottom: 1px;
+}
+
+.table-tab2 {
+  font-size: 18px;
+  text-align: center;
+  background-color: #595858;
+  color: #fff;
+  padding: 5px;
+}
+
+.bold-header {
+  font-weight: bold;
+}
+
+.table-tabs-container {
+  grid-gap: 10px;
+  border-radius: 5px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  // padding: 20px 0px 0px 0px;
+
+  @media screen and (min-width: 768px) {
+    //   grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+  }
+}
+
+.filter-btn {
+  font-size: 18px;
+  padding: 6px;
+  background: none;
+  border: none;
+  font-weight: 500;
+  background: #fff;
+}
+
+.select-btn {
+  @extend .filter-btn;
+  background: #595858;
+  box-shadow: 0 3px 17px rgba(0, 0, 0, 0.114);
+  color: #fff;
+}
+
+button {
+  box-shadow: none;
+  cursor: pointer;
+  outline: none;
+  align-items: center;
+}
+
+.tab {
+  font-size: 16px;
+  padding: 8px 16px;
+  margin: 10px 10px;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #d3d3d3;
+  }
+
+  &.active {
+    background-color: #595858;
+    color: #fff;
+  }
+}
+
+//table
+
+.table-main-container {
+  border: none;
+  box-shadow: none !important;
+  cursor: pointer;
+  overflow-y: scroll;
+}
